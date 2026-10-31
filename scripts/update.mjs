@@ -2,7 +2,7 @@ import fs from 'fs';
 
 const API_KEY = (process.env.GEMINI_API_KEY || '').trim();
 if (!API_KEY) {
-  console.error('❌ 오류: GEMINI_API_KEY가 비어 있습니다. Settings -> Secrets and variables -> Actions에서 이름을 GEMINI_API_KEY로 정확히 등록했는지 확인하세요.');
+  console.error('❌ 오류: GEMINI_API_KEY가 비어 있습니다.');
   process.exit(1);
 }
 
@@ -18,7 +18,6 @@ const OUTLETS = [
 ];
 
 async function fetchRSS(query) {
-  // 주말에도 사설이 충분히 잡히도록 최근 4일(when:4d) 기준으로 검색
   const url = `https://news.google.com/rss/search?q=${encodeURIComponent(query + ' when:4d')}&hl=ko&gl=KR&ceid=KR:ko`;
   const res = await fetch(url, { headers: { 'User-Agent': 'Mozilla/5.0' } });
   const xml = await res.text();
@@ -30,6 +29,22 @@ async function fetchRSS(query) {
     const desc = (block.match(/<description><!\[CDATA\[(.*?)\]\]><\/description>/) || block.match(/<description>(.*?)<\/description>/) || [,''])[1].replace(/<[^>]+>/g, ' ').replace(/\s+/g, ' ').trim();
     return { title, link, desc };
   });
+}
+
+async function getAvailableModels() {
+  const defaults = ['gemini-3.0-flash', 'gemini-3.0-pro', 'gemini-2.5-flash'];
+  try {
+    const res = await fetch(`https://generativelanguage.googleapis.com/v1beta/models?key=${API_KEY}`);
+    const data = await res.json();
+    if (data.models) {
+      const dynamic = data.models
+        .filter(m => m.supportedGenerationMethods?.includes('generateContent') && m.name.includes('gemini'))
+        .map(m => m.name.replace('models/', ''))
+        .sort((a, b) => (b.includes('flash') ? 1 : -1) - (a.includes('flash') ? 1 : -1));
+      return [...new Set([... defaults, ...dynamic])];
+    }
+  } catch (e) {}
+  return defaults;
 }
 
 async function main() {
@@ -85,7 +100,7 @@ ${JSON.stringify(rawList, null, 2)}
   ]
 }`;
 
-  const models = ['gemini-2.5-flash', 'gemini-2.0-flash', 'gemini-1.5-flash'];
+  const models = await getAvailableModels();
   let aiText = '';
   let lastError = '';
 
@@ -103,6 +118,7 @@ ${JSON.stringify(rawList, null, 2)}
     const aiData = await aiRes.json();
     if (aiRes.ok && aiData.candidates?.[0]?.content?.parts?.[0]?.text) {
       aiText = aiData.candidates[0].content.parts[0].text;
+      console.log(`✅ ${model} 응답 성공!`);
       break;
     } else {
       lastError = JSON.stringify(aiData.error || aiData);
