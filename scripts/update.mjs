@@ -1,27 +1,33 @@
 import fs from 'fs';
 
-const API_KEY = process.env.GEMINI_API_KEY;
+const API_KEY = (process.env.GEMINI_API_KEY || '').trim();
+if (!API_KEY) {
+  console.error('❌ 오류: GEMINI_API_KEY가 비어 있습니다. Settings -> Secrets and variables -> Actions에서 이름을 GEMINI_API_KEY로 정확히 등록했는지 확인하세요.');
+  process.exit(1);
+}
+
 const today = new Date(Date.now() + 9 * 3600 * 1000).toISOString().slice(0, 10);
 
 const OUTLETS = [
-  { id: 'chosun', name: '조선일보', group: '보수', home: 'https://www.chosun.com/opinion/editorial/', q: 'site:chosun.com/opinion/editorial "[사설]"' },
-  { id: 'joongang', name: '중앙일보', group: '보수', home: 'https://www.joongang.co.kr/opinion/editorialcolumn', q: 'site:joongang.co.kr "[사설]"' },
-  { id: 'donga', name: '동아일보', group: '보수', home: 'https://www.donga.com/news/Opinion', q: 'site:donga.com/news/Opinion "[사설]"' },
-  { id: 'hani', name: '한겨레', group: '진보', home: 'https://www.hani.co.kr/arti/opinion/editorial', q: 'site:hani.co.kr/arti/opinion/editorial "[사설]"' },
-  { id: 'khan', name: '경향신문', group: '진보', home: 'https://www.khan.co.kr/opinion/editorial/articles', q: 'site:khan.co.kr "[사설]"' },
-  { id: 'hankook', name: '한국일보', group: '중도', home: 'https://www.hankookilbo.com', q: 'site:hankookilbo.com "[사설]"' }
+  { id: 'chosun', name: '조선일보', group: '보수', home: 'https://www.chosun.com/opinion/editorial/', q: 'site:chosun.com/opinion/editorial 사설' },
+  { id: 'joongang', name: '중앙일보', group: '보수', home: 'https://www.joongang.co.kr/opinion/editorialcolumn', q: 'site:joongang.co.kr 사설' },
+  { id: 'donga', name: '동아일보', group: '보수', home: 'https://www.donga.com/news/Opinion', q: 'site:donga.com/news/Opinion 사설' },
+  { id: 'hani', name: '한겨레', group: '진보', home: 'https://www.hani.co.kr/arti/opinion/editorial', q: 'site:hani.co.kr/arti/opinion/editorial 사설' },
+  { id: 'khan', name: '경향신문', group: '진보', home: 'https://www.khan.co.kr/opinion/editorial/articles', q: 'site:khan.co.kr 사설' },
+  { id: 'hankook', name: '한국일보', group: '중도', home: 'https://www.hankookilbo.com', q: 'site:hankookilbo.com 사설' }
 ];
 
 async function fetchRSS(query) {
-  const url = `https://news.google.com/rss/search?q=${encodeURIComponent(query + ' when:2d')}&hl=ko&gl=KR&ceid=KR:ko`;
-  const res = await fetch(url);
+  // 주말에도 사설이 충분히 잡히도록 최근 4일(when:4d) 기준으로 검색
+  const url = `https://news.google.com/rss/search?q=${encodeURIComponent(query + ' when:4d')}&hl=ko&gl=KR&ceid=KR:ko`;
+  const res = await fetch(url, { headers: { 'User-Agent': 'Mozilla/5.0' } });
   const xml = await res.text();
   const items = [...xml.matchAll(/<item>([\s\S]*?)<\/item>/g)].slice(0, 3);
   return items.map(m => {
     const block = m[1];
     const title = (block.match(/<title><!\[CDATA\[(.*?)\]\]><\/title>/) || block.match(/<title>(.*?)<\/title>/) || [,''])[1].replace(/\s*-\s*[^-]+$/, '').trim();
     const link = (block.match(/<link>(.*?)<\/link>/) || [,''])[1].trim();
-    const desc = (block.match(/<description><!\[CDATA\[(.*?)\]\]><\/description>/) || block.match(/<description>(.*?)<\/description>/) || [,''])[1].replace(/<[^>]+>/g, ' ').trim();
+    const desc = (block.match(/<description><!\[CDATA\[(.*?)\]\]><\/description>/) || block.match(/<description>(.*?)<\/description>/) || [,''])[1].replace(/<[^>]+>/g, ' ').replace(/\s+/g, ' ').trim();
     return { title, link, desc };
   });
 }
@@ -29,15 +35,30 @@ async function fetchRSS(query) {
 async function main() {
   const rawList = [];
   for (const o of OUTLETS) {
-    const items = await fetchRSS(o.q);
-    items.forEach((it, idx) => rawList.push({ id: `${o.id}${idx + 1}`, outlet: o.id, outletName: o.name, published: today, ...it }));
+    try {
+      const items = await fetchRSS(o.q);
+      console.log(`${o.name}: ${items.length}편 수집됨`);
+      items.forEach((it, idx) => {
+        if (it.title && it.link) {
+          rawList.push({ id: `${o.id}${idx + 1}`, outlet: o.id, outletName: o.name, published: today, ...it });
+        }
+      });
+    } catch (e) {
+      console.warn(`${o.name} RSS 수집 오류:`, e.message);
+    }
+  }
+
+  if (!rawList.length) {
+    console.error('❌ 수집된 사설이 0편입니다.');
+    process.exit(1);
   }
 
   const prompt = `당신은 고등학교 '사회와 문화' 미디어 리터러시 수업 자료 제작자입니다.
-다음 오늘자(${today}) 6대 일간지 사설 목록을 분석하여 프로그램용 JSON 데이터를 생성하세요.
+다음 최신 6대 일간지 사설 목록을 분석하여 프로그램용 JSON 데이터를 생성하세요.
 - 같은 주제를 다루는 사설들은 동일한 'issue'(의제명)로 묶어 비교 가능하게 하세요.
+- 모든 문자열 필드는 빈 문자열("")이 되지 않도록 반드시 내용을 채우세요.
 - frameTags는 반드시 ["책임","갈등","위기","주권","원칙","효율","시민"] 중에서만 1~2개 고르세요.
-- verification은 "발췌" 또는 "제목"으로 표기하세요.
+- verification은 "발췌" 또는 "제목"으로만 표기하세요.
 - 응답은 마크다운 코드블록 없이 순수 JSON만 출력하세요.
 
 입력 사설 목록:
@@ -55,7 +76,7 @@ ${JSON.stringify(rawList, null, 2)}
   "outlets": ${JSON.stringify(OUTLETS.map(({id, name, group, home}) => ({id, name, group, home, coverage: '자동 수집 사설 수록'})))},
   "articles": [
     {
-      "id": "c1", "outlet": "chosun", "title": "사설 제목", "published": "${today}", "issue": "비교 가능한 공통 의제명",
+      "id": "chosun1", "outlet": "chosun", "title": "사설 제목", "published": "${today}", "issue": "비교 가능한 공통 의제명",
       "url": "https://...", "summary": "2~3문장 요약", "message": "핵심 주장 한 문장",
       "quote": "제목 또는 발췌 핵심 구절", "quoteLocation": "제목의 표현", "verification": "발췌",
       "frame": { "problem": "문제 정의", "cause": "원인·책임", "value": "핵심 가치", "solution": "제시 해법", "missing": "덜 드러난 대안 관점" },
@@ -64,21 +85,44 @@ ${JSON.stringify(rawList, null, 2)}
   ]
 }`;
 
-  const aiRes = await fetch(`https://generativelanguage.googleapis.com/v1beta/models/gemini-2.5-flash:generateContent?key=${API_KEY}`, {
-    method: 'POST',
-    headers: { 'Content-Type': 'application/json' },
-    body: JSON.stringify({
-      contents: [{ parts: [{ text: prompt }] }],
-      generationConfig: { responseMimeType: 'application/json' }
-    })
-  });
+  const models = ['gemini-2.5-flash', 'gemini-2.0-flash', 'gemini-1.5-flash'];
+  let aiText = '';
+  let lastError = '';
 
-  const aiData = await aiRes.json();
-  const jsonText = aiData.candidates[0].content.parts[0].text;
-  const parsed = JSON.parse(jsonText);
+  for (const model of models) {
+    console.log(`AI 모델 요청 중: ${model}...`);
+    const aiRes = await fetch(`https://generativelanguage.googleapis.com/v1beta/models/${model}:generateContent?key=${API_KEY}`, {
+      method: 'POST',
+      headers: { 'Content-Type': 'application/json' },
+      body: JSON.stringify({
+        contents: [{ parts: [{ text: prompt }] }],
+        generationConfig: { responseMimeType: 'application/json' }
+      })
+    });
+
+    const aiData = await aiRes.json();
+    if (aiRes.ok && aiData.candidates?.[0]?.content?.parts?.[0]?.text) {
+      aiText = aiData.candidates[0].content.parts[0].text;
+      break;
+    } else {
+      lastError = JSON.stringify(aiData.error || aiData);
+      console.warn(`${model} 호출 실패:`, lastError);
+    }
+  }
+
+  if (!aiText) {
+    console.error('❌ 모든 Gemini 모델 호출 실패. 상세 오류:', lastError);
+    process.exit(1);
+  }
+
+  const cleaned = aiText.replace(/^```json\s*/i, '').replace(/```\s*$/, '').trim();
+  const parsed = JSON.parse(cleaned);
 
   fs.writeFileSync('latest-dataset.json', JSON.stringify(parsed, null, 2), 'utf8');
-  console.log('latest-dataset.json 업데이트 완료!');
+  console.log('✅ latest-dataset.json 업데이트 완료!');
 }
 
-main();
+main().catch(err => {
+  console.error('❌ 실행 중 예외 발생:', err);
+  process.exit(1);
+});
