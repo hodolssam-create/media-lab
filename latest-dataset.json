@@ -1,487 +1,493 @@
 {
   "schemaVersion": 1,
-  "id": "editorials-2026-11-01-v1",
-  "title": "2026-11-01 조간 사설",
-  "issueDate": "2026-11-01",
-  "checkedAt": "2026-11-01",
-  "scope": "6개 종합일간지 최신 사설 자동 수집 및 AI 재구성 자료",
+  "id": "editorials-2026-11-02-v1",
+  "title": "2026-11-02 조간 사설",
+  "issueDate": "2026-11-02",
+  "checkedAt": "2026-11-02",
+  "scope": "6개 종합일간지의 최근 2일 '[사설]' 검색 결과에서 신문별 최대 3편을 자동 수집했습니다. 제목·링크·발행일만 확인했으며 요약과 프레임 분석은 넣지 않았습니다. 의제명은 AI가 제목만 보고 붙인 임시 분류입니다.",
   "classificationNote": "보수·진보·중도는 비교 수업을 위한 잠정적 분류입니다.",
+  "auto": {
+    "method": "GitHub Actions 자동 수집",
+    "collectedAt": "2026-11-02T01:25:53.358Z",
+    "verification": "제목",
+    "issueClassifier": "AI(gemini-flash-latest) · 제목 기준"
+  },
   "outlets": [
     {
       "id": "chosun",
       "name": "조선일보",
       "group": "보수",
       "home": "https://www.chosun.com/opinion/editorial/",
-      "coverage": "자동 수집 사설 수록"
+      "coverage": "자동 수집 3편 · 제목만 확인"
     },
     {
       "id": "joongang",
       "name": "중앙일보",
       "group": "보수",
       "home": "https://www.joongang.co.kr/opinion/editorialcolumn",
-      "coverage": "자동 수집 사설 수록"
+      "coverage": "자동 수집 3편 · 제목만 확인"
     },
     {
       "id": "donga",
       "name": "동아일보",
       "group": "보수",
       "home": "https://www.donga.com/news/Opinion",
-      "coverage": "자동 수집 사설 수록"
+      "coverage": "자동 수집 3편 · 제목만 확인"
     },
     {
       "id": "hani",
       "name": "한겨레",
       "group": "진보",
       "home": "https://www.hani.co.kr/arti/opinion/editorial",
-      "coverage": "자동 수집 사설 수록"
+      "coverage": "자동 수집 3편 · 제목만 확인"
     },
     {
       "id": "khan",
       "name": "경향신문",
       "group": "진보",
       "home": "https://www.khan.co.kr/opinion/editorial/articles",
-      "coverage": "자동 수집 사설 수록"
+      "coverage": "자동 수집 3편 · 제목만 확인"
     },
     {
       "id": "hankook",
       "name": "한국일보",
       "group": "중도",
       "home": "https://www.hankookilbo.com",
-      "coverage": "자동 수집 사설 수록"
+      "coverage": "자동 수집 3편 · 제목만 확인"
     }
   ],
   "articles": [
     {
       "id": "chosun1",
       "outlet": "chosun",
-      "title": "[사설] 조희대 법원 인사 막으려 ‘탄핵 직무 정지’, 헌법이 장난감인가",
-      "published": "2026-11-01",
-      "issue": "사법부 인사 및 탄핵 논란",
-      "url": "https://news.google.com/rss/articles/CBMihgFBVV95cUxPZF9nY2VabUdiYVJXMXdVcUVRWFZRZG5Uanp6MVh2MGZkWXdIZ2FUUXBjOXlwSzZuYXlSRFVfMmFGV2ozQV9ldU5WWEo3a1ppN3hqaWtFa0s2TXFoYnh1dkFaYkpBOTVEV3F1bjZGYTA4VE9oUXFOeHlpTGpSNHpPUm5UemlYUQ?oc=5",
-      "summary": "야권 일각에서 대법원장의 정상적 인사권을 제한하기 위해 탄핵 및 직무 정지를 거론하는 것은 헌법정신 훼손이라고 비판한다. 정파적 이해관계에 따라 사법부의 독립성을 흔드는 행위는 삼권분립의 근간을 위협한다고 지적한다. 탄핵 제도의 남용을 멈추고 헌법적 가치를 엄격히 준수해야 함을 강조한다.",
-      "message": "사법부의 정당한 인사를 방해하려는 정치적 탄핵 압박은 헌법과 법치주의에 대한 중대한 침해다.",
-      "quote": "‘탄핵 직무 정지’, 헌법이 장난감인가",
-      "quoteLocation": "제목의 표현",
+      "title": "[사설] 역차별 논란 다문화 우대, 과잉 혜택 손볼 때 됐다",
+      "published": "2026-11-02",
+      "publishedVerified": true,
+      "issue": "다문화 우대 혜택",
+      "url": "https://news.google.com/rss/articles/CBMihgFBVV95cUxPWWZCZWc5OXUzYnJBaTFjcTRKcElUX1Bob0JVcnc3LVFJSFU5eXNkVkkxbGE1SExFanpvNm9rLUlES0lEdnlvb1dmbjdGRWxyOWRQS2VmazRJNUVnbUltU1pmM1RfS25jYi1tV3o4bkd6UUtIbndEVVZYSndpeTZfejNYSnZZQQ?oc=5",
+      "summary": "제목·링크·발행일만 자동으로 확인한 자료입니다. [원문 읽기]로 본문을 확인하고 직접 요약해 보세요.",
+      "summaryKind": "자동 수집 · 제목만 확인",
+      "message": "원문을 읽고 이 사설의 핵심 주장을 한 문장으로 정리해 보세요.",
+      "quote": "역차별 논란 다문화 우대, 과잉 혜택 손볼 때 됐다",
+      "quoteLocation": "사설 제목",
       "verification": "제목",
+      "autoCollected": true,
       "frame": {
-        "problem": "정치권의 사법부 인사 개입 및 무분별한 탄핵 소추 카드 악용",
-        "cause": "특정 정파의 유불리에 따른 사법부 길들이기 시도",
-        "value": "사법부 독립과 헌법 질서 수호",
-        "solution": "정치적 목적의 사법부 흔들기 중단 및 헌법 절차 존중",
-        "missing": "사법부 인사 과정에 대한 민주적 통제 및 견제 장치의 필요성"
+        "problem": "원문 확인 후 직접 판독",
+        "cause": "원문 확인 후 직접 판독",
+        "value": "원문 확인 후 직접 판독",
+        "solution": "원문 확인 후 직접 판독",
+        "missing": "다른 신문 사설과 비교해 덜 드러난 관점을 찾아보세요."
       },
-      "frameTags": [
-        "원칙",
-        "갈등"
-      ]
+      "frameTags": []
     },
     {
       "id": "chosun2",
       "outlet": "chosun",
-      "title": "[사설] 양대 노총 \"임금 삭감 없는 정년연장\", 청년·비정규직 안 보이나",
-      "published": "2026-11-01",
-      "issue": "정년연장 및 노동시장 개혁",
-      "url": "https://news.google.com/rss/articles/CBMihgFBVV95cUxOTlN6RHhRRFBDMUItdmljOUF3VWtLdGpJUE5pMktmaTZzc1JpLXl0bklPXzF3VmctMzJjdEh3VzNrWDk3RWtuY1FqVEdJcU96cUtWRGp1c2h1am5JSnhQWjdIM3FXNkoxTHRaQVJMZEw2aVlzWHZYTlhueGk3WTE3dFFMNTFwZw?oc=5",
-      "summary": "양대 노총이 임금 삭감 없는 정년연장을 요구하는 것은 노동시장 이중구조를 심화시킬 수 있다고 우려한다. 기존 정규직의 기득권 유지에만 치중할 경우 청년 고용 축소와 비정규직 박탈감이 가중될 것임을 지적한다. 임금체계 개편과 노동 유연성이 동반되지 않은 일방적 연장은 부작용만 부를 것이라 본다.",
-      "message": "임금체계 개편 없는 무조건적인 정년연장은 청년과 취약계층의 고용 기회를 위축시킨다.",
-      "quote": "청년·비정규직 안 보이나",
-      "quoteLocation": "제목의 표현",
+      "title": "[사설] ‘재래식 전력은 北 압도’란 통념, 정말 믿어도 되나",
+      "published": "2026-11-02",
+      "publishedVerified": true,
+      "issue": "대북 재래식 전력 평가",
+      "url": "https://news.google.com/rss/articles/CBMihgFBVV95cUxNdUt2dmdOakYwQkdKWm9Qa0M1MUhBZUN1b0RHdDgxWnhOX1dJUm9QQ3ZqcjZZdS0wcjNINmdVbXEwZFhQcER5c1RoYl9aU3A0ak52dlBaS3NVU1dYY0w2THRMSkdPZUZpZnVCYXNYQUxSbnJIaTdRZXp1eUlXZEFZbC1ra2tUdw?oc=5",
+      "summary": "제목·링크·발행일만 자동으로 확인한 자료입니다. [원문 읽기]로 본문을 확인하고 직접 요약해 보세요.",
+      "summaryKind": "자동 수집 · 제목만 확인",
+      "message": "원문을 읽고 이 사설의 핵심 주장을 한 문장으로 정리해 보세요.",
+      "quote": "‘재래식 전력은 北 압도’란 통념, 정말 믿어도 되나",
+      "quoteLocation": "사설 제목",
       "verification": "제목",
+      "autoCollected": true,
       "frame": {
-        "problem": "기득권 노조의 임금체계 보존 중심 정년연장 요구",
-        "cause": "노동조합의 세대 간 상생 인식 결여 및 고용 경직성",
-        "value": "세대 간 고용 형평성과 노동시장 효율",
-        "solution": "직무·성과급제 등 임금체계 개편과 연계한 점진적 계속고용 논의",
-        "missing": "고령화 사회에서 노인 빈곤 문제 완화 및 공적 연금 공백 해소 관점"
+        "problem": "원문 확인 후 직접 판독",
+        "cause": "원문 확인 후 직접 판독",
+        "value": "원문 확인 후 직접 판독",
+        "solution": "원문 확인 후 직접 판독",
+        "missing": "다른 신문 사설과 비교해 덜 드러난 관점을 찾아보세요."
       },
-      "frameTags": [
-        "효율",
-        "갈등"
-      ]
+      "frameTags": []
     },
     {
       "id": "chosun3",
       "outlet": "chosun",
-      "title": "[사설] 소아 응급실 강제 수사, 의료에 대한 모욕이다",
-      "published": "2026-11-01",
-      "issue": "응급의료 형사책임 및 수사 가이드라인",
-      "url": "https://news.google.com/rss/articles/CBMihgFBVV95cUxOQlZtTWgwcVRGd19reHVueUdwQkp6U2xFMXpUZWJyeE1CNDNJd2ZkT3UtQWw1YklPQk1mS2hBRnRtOVMtTlg4TVRGYkg1YXk0TVNDbVNHdkFzYTViOHljRDh0aTFHUDBxSnd3c1ozZlVXejBJZk43NFZPOEM3UC1yVXc3UmhnZw?oc=5",
-      "summary": "필수의료 붕괴 위기 속에서 소아 응급실 의료진에 대해 강제 수사를 단행하는 행태는 필수의료 기피를 심화시킬 뿐이라고 규탄한다. 위험도가 높은 진료 환경에서 불가피하게 발생할 수 있는 사고까지 사법 잣대로 다루면 방어 진료가 일상화된다고 비판한다. 의료진의 사명감을 꺾는 과도한 수사 관행을 멈추고 법적 보호책을 마련해야 한다고 주장한다.",
-      "message": "과도한 사법 처벌과 강제 수사는 필수의료 인력 이탈을 부추겨 결국 국민 건강권을 해친다.",
-      "quote": "소아 응급실 강제 수사, 의료에 대한 모욕이다",
-      "quoteLocation": "제목의 표현",
+      "title": "[사설] 20분 새 8조 턴 北, 해킹 막을 관련법은 20년 표류",
+      "published": "2026-11-02",
+      "publishedVerified": true,
+      "issue": "북한의 8조원대 가상자산 해킹",
+      "url": "https://news.google.com/rss/articles/CBMihgFBVV95cUxPYXp0QVQ2NEswYjlad2tHaDZzZ29mVGozZFQ0dTlTZ2xJbGlfWDRqUWRVTEVqdGcxN3dwSEx3MHk2LTU2akpwMmhETDJCaGs2alFVTU5ESzZxMXRpYTY0MWU5cXpvYmhCU2NOUFgzcHZVVHR6NFQ1aEpSNG52ai1aTFRTNXVMdw?oc=5",
+      "summary": "제목·링크·발행일만 자동으로 확인한 자료입니다. [원문 읽기]로 본문을 확인하고 직접 요약해 보세요.",
+      "summaryKind": "자동 수집 · 제목만 확인",
+      "message": "원문을 읽고 이 사설의 핵심 주장을 한 문장으로 정리해 보세요.",
+      "quote": "20분 새 8조 턴 北, 해킹 막을 관련법은 20년 표류",
+      "quoteLocation": "사설 제목",
       "verification": "제목",
+      "autoCollected": true,
       "frame": {
-        "problem": "필수의료 현장에 대한 무차별적인 사법 당국의 강제 수사",
-        "cause": "응급의료 특수성을 무시한 수사기관의 경직된 법 집행",
-        "value": "의료 현장의 안정성 및 필수 의료체계 보전",
-        "solution": "의료사고 형사처벌 특례 확대 및 신중한 수사 절차 정립",
-        "missing": "의료사고 피해 환자 및 가족의 알 권리와 신속한 진상 규명 요구"
+        "problem": "원문 확인 후 직접 판독",
+        "cause": "원문 확인 후 직접 판독",
+        "value": "원문 확인 후 직접 판독",
+        "solution": "원문 확인 후 직접 판독",
+        "missing": "다른 신문 사설과 비교해 덜 드러난 관점을 찾아보세요."
       },
-      "frameTags": [
-        "원칙",
-        "위기"
-      ]
+      "frameTags": []
     },
     {
       "id": "joongang1",
       "outlet": "joongang",
-      "title": "[사설] 외국인 노동자·다문화 차별 논란 자초한 대통령 발언",
-      "published": "2026-11-01",
-      "issue": "대통령 외국인·다문화 관련 발언",
-      "url": "https://news.google.com/rss/articles/CBMiVkFVX3lxTE4yOU9WTWJRczJwbTFxMDBBSE1OckpMWmFmTXVLcmx2WmN1ck5sdmZZb3ZudzhYalNDZVJLY3ZEclVLSFRyblprY0QySnROODdfMHBnVmJR?oc=5",
-      "summary": "대통령의 정제되지 않은 언사가 이주노동자와 다문화 가정을 차별하고 편견을 조장한다는 불필요한 논란을 빚었다고 지적한다. 인구 절벽 상황에서 외국인 인력 유치와 사회 통합이 국가적 과제임에도 최고 지도자가 분열의 단초를 제공했다고 비판한다. 지도자로서 책임 있는 언어 구사와 포용적 다문화 정책 기조 확립을 촉구한다.",
-      "message": "국가 지도자는 사회 통합을 저해하고 혐오를 유발할 수 있는 정제되지 않은 발언을 자제해야 한다.",
-      "quote": "외국인 노동자·다문화 차별 논란 자초한 대통령 발언",
-      "quoteLocation": "제목의 표현",
+      "title": "[사설] 예산국회 본격 개막…선심성 예산 과감히 삭감해야",
+      "published": "2026-11-02",
+      "publishedVerified": true,
+      "issue": "국회 예산안 심사",
+      "url": "https://news.google.com/rss/articles/CBMiVkFVX3lxTFBxUV9Hdm9CVmpkWjhqb3JYOHd1SUhnc2JFSFhTeDhRWjk3MHRuZDF5V0NGdlpheHZ1SzNwMDRNMlBaR2J5WU9JeTl5NF9va2xWb01UNjBB?oc=5",
+      "summary": "제목·링크·발행일만 자동으로 확인한 자료입니다. [원문 읽기]로 본문을 확인하고 직접 요약해 보세요.",
+      "summaryKind": "자동 수집 · 제목만 확인",
+      "message": "원문을 읽고 이 사설의 핵심 주장을 한 문장으로 정리해 보세요.",
+      "quote": "예산국회 본격 개막…선심성 예산 과감히 삭감해야",
+      "quoteLocation": "사설 제목",
       "verification": "제목",
+      "autoCollected": true,
       "frame": {
-        "problem": "외국인 노동자와 다문화 가정을 향한 배타적 편견을 자극한 대통령 발언",
-        "cause": "다문화 사회 이해 부족과 최고 지도자의 설화",
-        "value": "사회 통합과 다문화 인권 존중",
-        "solution": "신중한 공적 메시지 발신 및 차별 없는 포용적 이민·노동 정책",
-        "missing": "내국인 일자리 보호 및 사회적 비용 우려에 대한 정책적 고려"
+        "problem": "원문 확인 후 직접 판독",
+        "cause": "원문 확인 후 직접 판독",
+        "value": "원문 확인 후 직접 판독",
+        "solution": "원문 확인 후 직접 판독",
+        "missing": "다른 신문 사설과 비교해 덜 드러난 관점을 찾아보세요."
       },
-      "frameTags": [
-        "책임",
-        "시민"
-      ]
+      "frameTags": []
     },
     {
       "id": "joongang2",
       "outlet": "joongang",
-      "title": "[사설] 28년 만의 SCM 연기, 신뢰 없는 전작권 전환 성공 못 한다",
-      "published": "2026-11-01",
-      "issue": "한미 안보 협력 및 국방 역량",
-      "url": "https://news.google.com/rss/articles/CBMiVkFVX3lxTE8za0xuSno0dlBELWhYOVlLYVBqYkJJTGVRRkpvUDQzdzR5aEpWbzRrQUNsRUxKWWFCZE5aekpKZk9FUERUSTB6OVNvMVZpWXEyTFVvZ3Nn?oc=5",
-      "summary": "한미안보협의회의(SCM)가 이례적으로 연기된 것은 양국 간 안보 전략 조율과 신뢰에 이상 신호가 켜졌음을 시사한다고 우려한다. 북한의 핵·미사일 고도화 상황에서 전작권 전환은 굳건한 동맹 신뢰와 조건 충족이 전제되어야 함을 강조한다. 명분에 얽매이지 말고 실질적인 대북 억제력과 한미 공조 체제를 재정비해야 한다고 제언한다.",
-      "message": "한미 동맹의 굳건한 신뢰와 독자적 억제력 검증 없이 무리하게 전작권 전환을 추진해선 안 된다.",
-      "quote": "신뢰 없는 전작권 전환 성공 못 한다",
-      "quoteLocation": "제목의 표현",
+      "title": "[사설] 우려하던 치안 공백 현실화한 ‘검수완박’ 한 달",
+      "published": "2026-11-02",
+      "publishedVerified": true,
+      "issue": "형사사법체계 개편 시행 한 달",
+      "url": "https://news.google.com/rss/articles/CBMiVkFVX3lxTFAzUDVEUVk3WXBkcGNEVnhCQ0dJUnpQc3EzODRoZEhZTGh5cFZ2Q2haOWNlelRueFBCY2FLREl1ZHVQZEJLdDlGVm5pUnFBMnl1bUpBdzZB?oc=5",
+      "summary": "제목·링크·발행일만 자동으로 확인한 자료입니다. [원문 읽기]로 본문을 확인하고 직접 요약해 보세요.",
+      "summaryKind": "자동 수집 · 제목만 확인",
+      "message": "원문을 읽고 이 사설의 핵심 주장을 한 문장으로 정리해 보세요.",
+      "quote": "우려하던 치안 공백 현실화한 ‘검수완박’ 한 달",
+      "quoteLocation": "사설 제목",
       "verification": "제목",
+      "autoCollected": true,
       "frame": {
-        "problem": "SCM 연기로 불거진 한미 안보 공조 균열 우려",
-        "cause": "전작권 전환 요건에 대한 한미 간 시각차와 전략적 불협화음",
-        "value": "국가 안보와 한미 동맹의 신뢰",
-        "solution": "조건 기반 전작권 전환 원칙 준수 및 대북 억제 공조 복원",
-        "missing": "자주국방 역량 확보를 통한 군사주권 조기 확립의 당위성"
+        "problem": "원문 확인 후 직접 판독",
+        "cause": "원문 확인 후 직접 판독",
+        "value": "원문 확인 후 직접 판독",
+        "solution": "원문 확인 후 직접 판독",
+        "missing": "다른 신문 사설과 비교해 덜 드러난 관점을 찾아보세요."
       },
-      "frameTags": [
-        "위기",
-        "원칙"
-      ]
+      "frameTags": []
     },
     {
       "id": "joongang3",
       "outlet": "joongang",
-      "title": "[사설] 진통 속 ‘올공’ 투표지 반출…의혹 규명해 선거불신 걷어내야",
-      "published": "2026-11-01",
-      "issue": "선거 관리 및 투표 공정성",
-      "url": "https://news.google.com/rss/articles/CBMiVkFVX3lxTE5Ga19RQlg3cE50LW9TN19GaktyNGNjYk1uX3ZQcE9BZkdWVHBvUE9XSDJ6RHVDR0FiaFBUVGp5UjNNcTE0b3hpZXAyQ214RnMtUExXTVpn?oc=5",
-      "summary": "올림픽공원 보관소의 투표지 반출 과정에서 물리적 충돌과 갈등이 빚어진 사태는 선거 행정의 불신을 여실히 드러낸다고 본다. 민주주의의 근간인 선거에서 투명성이 결여되면 민주적 정당성 전체가 흔들릴 수밖에 없다고 지적한다. 선관위는 모든 절차를 투명하게 공개하고 제기된 의혹을 철저히 규명해 사회적 불신을 해소해야 한다고 촉구한다.",
-      "message": "투표 관리 절차를 투명하게 공개하고 명확한 검증을 통해 선거에 대한 국민적 신뢰를 회복해야 한다.",
-      "quote": "의혹 규명해 선거불신 걷어내야",
-      "quoteLocation": "제목의 표현",
+      "title": "[사설] 성장기 한국인의 희로애락 품고 떠난 ‘국민 어른’ 최불암",
+      "published": "2026-11-02",
+      "publishedVerified": true,
+      "issue": "배우 최불암 별세",
+      "url": "https://news.google.com/rss/articles/CBMiVkFVX3lxTE92YjYzUUsyeF9ySWQ0dkdVamdkazdLckpMM2FwZ2d3d2N1dTlkbFVWRTNqVk5vb2EtTFhxVFQ1aUdRQ01VbXpXdV9wbHV0NGZuTFBONERn?oc=5",
+      "summary": "제목·링크·발행일만 자동으로 확인한 자료입니다. [원문 읽기]로 본문을 확인하고 직접 요약해 보세요.",
+      "summaryKind": "자동 수집 · 제목만 확인",
+      "message": "원문을 읽고 이 사설의 핵심 주장을 한 문장으로 정리해 보세요.",
+      "quote": "성장기 한국인의 희로애락 품고 떠난 ‘국민 어른’ 최불암",
+      "quoteLocation": "사설 제목",
       "verification": "제목",
+      "autoCollected": true,
       "frame": {
-        "problem": "투표지 보관 및 이송 과정에서 불거진 불투명성과 대중적 불신",
-        "cause": "선거관리위원회의 안일한 행정과 미흡한 소통",
-        "value": "선거 공정성과 민주주의 신뢰",
-        "solution": "철저한 사실관계 규명과 투명한 선거 물류 절차 확립",
-        "missing": "근거 없는 음모론과 가짜뉴스로 인한 행정력 낭비 및 사회 갈등"
+        "problem": "원문 확인 후 직접 판독",
+        "cause": "원문 확인 후 직접 판독",
+        "value": "원문 확인 후 직접 판독",
+        "solution": "원문 확인 후 직접 판독",
+        "missing": "다른 신문 사설과 비교해 덜 드러난 관점을 찾아보세요."
       },
-      "frameTags": [
-        "원칙",
-        "갈등"
-      ]
+      "frameTags": []
     },
     {
       "id": "donga1",
       "outlet": "donga",
-      "title": "[사설]821조 초팽창 예산안 심사… ‘퍼주기’ 매섭게 걸러내라",
+      "title": "[사설]FBI “바이낸스 8조 해킹 뒤에 北”… 보안 사각 韓 거래소도 비상",
       "published": "2026-11-01",
-      "issue": "국가 예산안 심사 및 재정 건전성",
-      "url": "https://news.google.com/rss/articles/CBMidkFVX3lxTE9vSERiQTJPdWZFc1lfSDg4TTU3RVpkeS10MXE1WFQ2amVmZjh1Q0VzTHVWN2d2eTdHaS1MUmI3XzlwcWJKcHJyeWtORW5hSnJ6MGlMRVphOTBFUzVpdzFDdmlaOGlDUGNKa0RSTndIZjQ2TGF3R1HSAWZBVV95cUxPSDV2V2FZbkRrckxzaGZqSXhNV25GQ3BDOTZkaWZNZjlJTHNIRTF4bmtQM1BTd1ZyQjFPZXNSREZRYnZGM2NXYy1MQmkxLUltZkhwcFRjZmpIV0cydTZfQU5Bd3ozV2c?oc=5",
-      "summary": "820조 원을 넘어서는 초팽창 국가 예산안에 대해 국회가 엄격하고 치밀한 현미경 심사를 벌여야 한다고 촉구한다. 선거용 선심성 사업과 불요불급한 낭비 예산을 삭감하지 않는다면 미래 세대의 재정 부담이 걷잡을 수 없이 커진다고 경고한다. 재정 건전성을 유지하면서도 진정 필요한 성장 동력과 취약계층에 예산이 집중되도록 재조정해야 한다고 강조한다.",
-      "message": "국회는 선심성 퍼주기 예산을 철저히 삭감하여 국가 재정 건전성과 미래 세대 부담을 지켜내야 한다.",
-      "quote": "‘퍼주기’ 매섭게 걸러내라",
-      "quoteLocation": "제목의 표현",
+      "publishedVerified": true,
+      "issue": "북한의 8조원대 가상자산 해킹",
+      "url": "https://news.google.com/rss/articles/CBMidkFVX3lxTE1Sd05kd0gtRTdQaWpnWXRDWjh5MlkzRHZQM0hUNGEwTm9EZVFiMUJFVTVSZGVlNVg4V1p6N0R3RkN1c3hCYWFBMFZUM3hXSEZVX1d1LTY0V1B3T2hmVGw1TGxXRkNuVmV6Y21sVUlFUUd6T0kzdnfSAWZBVV95cUxOS0UtbmItdnBwRk5EcGRNWllJYVI3LUF4cVlOeW9uRVNtZDc1SVByd1ZrZjVMR215NUlsZXhCTmhMV3Ricmx5UjVwMjkwekFqZ3dBdUlwZHZPdE14bmNoRVgxcjNGRGc?oc=5",
+      "summary": "제목·링크·발행일만 자동으로 확인한 자료입니다. [원문 읽기]로 본문을 확인하고 직접 요약해 보세요.",
+      "summaryKind": "자동 수집 · 제목만 확인",
+      "message": "원문을 읽고 이 사설의 핵심 주장을 한 문장으로 정리해 보세요.",
+      "quote": "FBI “바이낸스 8조 해킹 뒤에 北”… 보안 사각 韓 거래소도 비상",
+      "quoteLocation": "사설 제목",
       "verification": "제목",
+      "autoCollected": true,
       "frame": {
-        "problem": "급격히 늘어난 초팽창 예산안으로 인한 재정 건전성 악화",
-        "cause": "정치권의 선심성 포퓰리즘 예산 편성 관행",
-        "value": "재정 건전성과 미래 세대 책임",
-        "solution": "국회 예산 심사 시 낭비성 사업 전액 삭감 및 효율적 재배분",
-        "missing": "경기 침체 방어를 위한 확장 재정의 경기 부양 및 복지 안전망 효과"
+        "problem": "원문 확인 후 직접 판독",
+        "cause": "원문 확인 후 직접 판독",
+        "value": "원문 확인 후 직접 판독",
+        "solution": "원문 확인 후 직접 판독",
+        "missing": "다른 신문 사설과 비교해 덜 드러난 관점을 찾아보세요."
       },
-      "frameTags": [
-        "효율",
-        "책임"
-      ]
+      "frameTags": []
     },
     {
       "id": "donga2",
       "outlet": "donga",
-      "title": "[사설]또 F학점… 다른 나라에는 없는 이런 국감 계속해야 하나",
+      "title": "[사설]오피스텔 전세가율 85%… 전세 사기 경고등 다시 켤 때",
       "published": "2026-11-01",
-      "issue": "국정감사 제도 개혁",
-      "url": "https://news.google.com/rss/articles/CBMidkFVX3lxTE1xRW1EQU5HQWk4YzV6Sk5leGtQcFF4MVo5c3FiODVDOU16QXVfbXJyTXVxZ0U3WksxdXRjSlM3VGxsU0NiVXB4SjhjS1BUMFA0MnQ0ZFYtTkctY2lQdkRXNzJ4Vy1rTElCU3NyOGVadDNYV3ZwQVHSAWZBVV95cUxOcXFFTVphMTROZ3g5YkZwcndDR1V4OXR6cnhDcTNLc3VnUmN2czlTTmhJalRWZl9JWTdxOTQ4aENKemNsUUdFVVItOU1ld3NCTS1sdXpLRmIySjB6UzAzbWNvb3R1c3c?oc=5",
-      "summary": "올해 국정감사 역시 정쟁과 호통, 기업인 줄세우기로 일관하며 최악의 성적표를 남겼다고 비판한다. 행정부 감시라는 본래 취지를 상실한 채 일회성 정치 쇼로 전락한 국감 제도의 구조적 한계를 꼬집는다. 상임위 중심의 상시 국감으로 전환하거나 비효율적인 감사 관행을 근본적으로 손질해야 한다고 주장한다.",
-      "message": "정쟁과 망신주기로 얼룩진 비효율적 일제 국정감사 제도를 상시 감사 체계로 전면 개혁해야 한다.",
-      "quote": "다른 나라에는 없는 이런 국감 계속해야 하나",
-      "quoteLocation": "제목의 표현",
+      "publishedVerified": true,
+      "issue": "오피스텔 전세가율 상승과 전세 사기",
+      "url": "https://news.google.com/rss/articles/CBMidkFVX3lxTFBsc2ZMZ01ZSFg5TjUxblFJUnVJOGE0N2pabFE3MXpFdU02ZlFTUUU0UlpXRjlaUHpYYXJxV253S3FoVmxCaGxtcmpRRnplSGVVNW1lRmFWQ0JMZ3lrcjBiUXhGR3kweXRrUG9uZ2QyMUtOOTB6NlHSAWZBVV95cUxNZDlxZ2h2UU5jZnEzYkdNaC11UGkxWEhPMEF3N1V5SUJRUEdXTUZrMkRickdBMVpDRm1VZDJ3eWJtaWZZZzBIYzI2bnBWNmtYSEJHd1lMT25VLVZjeXdaeXF5TWtXSUE?oc=5",
+      "summary": "제목·링크·발행일만 자동으로 확인한 자료입니다. [원문 읽기]로 본문을 확인하고 직접 요약해 보세요.",
+      "summaryKind": "자동 수집 · 제목만 확인",
+      "message": "원문을 읽고 이 사설의 핵심 주장을 한 문장으로 정리해 보세요.",
+      "quote": "오피스텔 전세가율 85%… 전세 사기 경고등 다시 켤 때",
+      "quoteLocation": "사설 제목",
       "verification": "제목",
+      "autoCollected": true,
       "frame": {
-        "problem": "정책 검증 없이 정쟁과 호통으로 점철된 저효율 국정감사",
-        "cause": "한 달간 몰아서 치르는 집중 국감 방식과 국회의원들의 보여주기식 행태",
-        "value": "의회 민주주의 정상화와 행정 감사 효율",
-        "solution": "상임위별 상시 국정감사 체제 전환 및 증인 채택 남발 금지",
-        "missing": "집중 감사를 통해 대형 권력 비리를 일시에 파헤칠 수 있는 순기능"
+        "problem": "원문 확인 후 직접 판독",
+        "cause": "원문 확인 후 직접 판독",
+        "value": "원문 확인 후 직접 판독",
+        "solution": "원문 확인 후 직접 판독",
+        "missing": "다른 신문 사설과 비교해 덜 드러난 관점을 찾아보세요."
       },
-      "frameTags": [
-        "효율",
-        "책임"
-      ]
+      "frameTags": []
     },
     {
       "id": "donga3",
       "outlet": "donga",
-      "title": "[사설]‘7명 사망’ 울산 붕괴 사고… 주먹구구 해체공사가 부른 人災",
+      "title": "[사설]국민연금 수급자 800만… ‘넓고 얕은’ 기초연금 재설계를",
       "published": "2026-11-01",
-      "issue": "산업현장 안전관리 및 붕괴 참사",
-      "url": "https://news.google.com/rss/articles/CBMidkFVX3lxTE9IQmppUTVvWWdKU1JRMkgzWV81UlJSUmpEc0RvT1cwTnR0ZDBDalgteFdBVGw5dWpEckdJblJxNjRJX2JEbDgxUUs5V2xBVEVRM3hMZ1Fzem02a3pxUHBaVUFwNG9DRmo1a0FqdExOVGR0cVota0HSAWZBVV95cUxQRHpnX1NPTTFCalZfMUJRVkZFNmxtLW1sSFZYWlNlQ2FESnNKUDhxVEEwVTlENlIyRC1XV2RyWWExSVhFcGRGandyRDhzYmpydVhYVjBnOTJMdXJDcjkydnI0ZldsREE?oc=5",
-      "summary": "울산 해체 공사 현장에서 발생한 대형 붕괴 사고로 7명이 사망한 사건은 기본적 안전 수칙을 외면한 명백한 인재라고 질타한다. 안전성 검토 없는 무리한 공기 단축과 주먹구구식 철거 작업이 반복적인 참사를 낳았다고 지적한다. 관리·감독 부실을 철저히 규명하고 엄벌하여 현장 안전 불감증의 고리를 끊어야 한다고 역설한다.",
-      "message": "비용 절감과 속도전에 밀려 안전 원칙을 팽개친 해체 공사 책임자를 엄벌하고 재발 방지책을 마련해야 한다.",
-      "quote": "주먹구구 해체공사가 부른 人災",
-      "quoteLocation": "제목의 표현",
+      "publishedVerified": true,
+      "issue": "기초연금 재설계 논의",
+      "url": "https://news.google.com/rss/articles/CBMidkFVX3lxTE9iM0tLME1VTFVXRVpwT2xHS2VsNTh1SWdrSEdTRzJZYTNmR1ZXMC03bWpoRFoxRnlHd0diMFNkRlJqUGwyOEJwV3JYSXBCUDlsclJLZFlqbEh1TVJjb0Z1d1JfZDZHNGItRFU5ZGpPN2FXcDFrcGfSAWZBVV95cUxNZi11Z3doNk1Gd2hmbEE1emVzU0FDSDRSNzY4QWo4RDVrbTl3X0tNY0k2TE1KQzJDYVpDMHFzTXBWTF9JeDM4VDJNMldyczJOZ2Y1RVVpbVcyRDdZbTR3ejNFYU1OTkE?oc=5",
+      "summary": "제목·링크·발행일만 자동으로 확인한 자료입니다. [원문 읽기]로 본문을 확인하고 직접 요약해 보세요.",
+      "summaryKind": "자동 수집 · 제목만 확인",
+      "message": "원문을 읽고 이 사설의 핵심 주장을 한 문장으로 정리해 보세요.",
+      "quote": "국민연금 수급자 800만… ‘넓고 얕은’ 기초연금 재설계를",
+      "quoteLocation": "사설 제목",
       "verification": "제목",
+      "autoCollected": true,
       "frame": {
-        "problem": "기본 안전 매뉴얼을 무시한 철거 현장 붕괴로 다수 사상자 발생",
-        "cause": "무리한 공기 단축과 시공사·감리사의 총체적 안전 관리 부실",
-        "value": "노동자 생명 안전과 산업 안전 원칙",
-        "solution": "철저한 사고 원인 규명, 책임자 형사 처벌, 해체 인허가 기준 강화",
-        "missing": "중소 건설업계의 열악한 채산성과 공사비 현실화 대책"
+        "problem": "원문 확인 후 직접 판독",
+        "cause": "원문 확인 후 직접 판독",
+        "value": "원문 확인 후 직접 판독",
+        "solution": "원문 확인 후 직접 판독",
+        "missing": "다른 신문 사설과 비교해 덜 드러난 관점을 찾아보세요."
       },
-      "frameTags": [
-        "책임",
-        "위기"
-      ]
+      "frameTags": []
     },
     {
       "id": "hani1",
       "outlet": "hani",
-      "title": "[사설] 응급실 수사 지침, 환자 생명권·의사 진료권 아울러야",
+      "title": "[사설] 바이낸스 8조원대 해킹, 국내 거래소는 안전한가",
       "published": "2026-11-01",
-      "issue": "응급의료 형사책임 및 수사 가이드라인",
-      "url": "https://news.google.com/rss/articles/CBMiakFVX3lxTE56RFdpSjQwOUE5MUlVeko3RTJoUXp2Sk9iR19fbWJPNnpzVmxGVm40VWpYM2hCVlpHcGdYTUZWQmRiUHFfYUNmRllmczZNT0NocEZ1WmMtOXIyMExpQW5fUUtYVWZiRHhmQ0E?oc=5",
-      "summary": "응급실 사망 및 사고에 대한 수사 지침 마련 시 환자의 생명권 보호와 의료진의 안정적 진료권이 균형을 이루어야 한다고 강조한다. 의료진에 대한 섣부른 형사처벌 압박은 필수의료 붕괴로 이어질 수 있지만, 환자 측의 억울한 피해 구제 창구 역시 차단되어선 안 된다고 본다. 정교한 수사 기준과 분쟁 조정 제도를 통해 양측의 권리를 조화롭게 보장해야 한다고 제언한다.",
-      "message": "응급의료 수사 가이드라인은 환자의 알 권리와 의료진의 소신 진료 환경을 균형 있게 보장해야 한다.",
-      "quote": "환자 생명권·의사 진료권 아울러야",
-      "quoteLocation": "제목의 표현",
+      "publishedVerified": true,
+      "issue": "북한의 8조원대 가상자산 해킹",
+      "url": "https://news.google.com/rss/articles/CBMiakFVX3lxTE9VTndmTUg5NkxVZ0JPN0Q5c0RKQlpjNGRHQkNVdnZiQ3RDRlJnVFA1cjlsLU56UlZQOWRpM3g1Yl9ZLWd3TWU4TURrTG05N21HakF4TE1qMDlBRm9kekZKaENMRGh2VUJIcGc?oc=5",
+      "summary": "제목·링크·발행일만 자동으로 확인한 자료입니다. [원문 읽기]로 본문을 확인하고 직접 요약해 보세요.",
+      "summaryKind": "자동 수집 · 제목만 확인",
+      "message": "원문을 읽고 이 사설의 핵심 주장을 한 문장으로 정리해 보세요.",
+      "quote": "바이낸스 8조원대 해킹, 국내 거래소는 안전한가",
+      "quoteLocation": "사설 제목",
       "verification": "제목",
+      "autoCollected": true,
       "frame": {
-        "problem": "응급의료 사고 처벌을 둘러싼 의료계와 환자·유가족 간의 권리 충돌",
-        "cause": "응급현장 특수성을 감안한 표준 수사 기준 및 분쟁 해결 기제 미비",
-        "value": "환자의 생명권과 의료인의 직무 안정성 조화",
-        "solution": "전문 감정 절차 내실화 및 형사처벌 전 조정 중재 제도 활성화",
-        "missing": "의료사고 발생 시 환자 측이 겪는 정보 비대칭과 입증 책임의 어려움"
+        "problem": "원문 확인 후 직접 판독",
+        "cause": "원문 확인 후 직접 판독",
+        "value": "원문 확인 후 직접 판독",
+        "solution": "원문 확인 후 직접 판독",
+        "missing": "다른 신문 사설과 비교해 덜 드러난 관점을 찾아보세요."
       },
-      "frameTags": [
-        "원칙",
-        "시민"
-      ]
+      "frameTags": []
     },
     {
       "id": "hani2",
       "outlet": "hani",
-      "title": "[사설] 귀 기울여야 할 미 소비자단체의 쿠팡 비판",
+      "title": "[사설] ‘양극화 완화’ 예산 보강하되, ‘새는 돈’ 없게 철저 심사해야",
       "published": "2026-11-01",
-      "issue": "플랫폼 독과점 및 노동·소비자 권익",
-      "url": "https://news.google.com/rss/articles/CBMiakFVX3lxTE9Tc2JCd0I3Z3YyOEJvSHo3LWdsUWJiSFRJb1dLbnZEQWRJMk5yRE80Q01Qd3NlTzhDVW8tMnBZUUljdjF0VGt0YWc2WDBNbklJaWRqeFBMdVE1WThOenQwQmRxN0EyNjNSS3c?oc=5",
-      "summary": "미국 소비자단체가 쿠팡의 불공정 거래와 알고리즘 조작, 노동 착취 의혹을 비판한 것은 플랫폼 시장의 공정성에 중대한 질문을 던진다고 본다. 독점적 지위를 이용해 입점 업체를 쥐어짜고 물류 노동자를 과로로 내모는 방식은 지속 가능하지 않다고 꼬집는다. 글로벌 기준에 부합하도록 플랫폼의 독점 남용을 규제하고 상생 생태계를 조성해야 한다고 촉구한다.",
-      "message": "빅테크 플랫폼의 불공정 행위와 노동 환경 악화를 막기 위해 강력한 공정거래 감독이 필요하다.",
-      "quote": "귀 기울여야 할 미 소비자단체의 쿠팡 비판",
-      "quoteLocation": "제목의 표현",
+      "publishedVerified": true,
+      "issue": "국회 예산안 심사",
+      "url": "https://news.google.com/rss/articles/CBMiakFVX3lxTE9idWpwbUM1REhacWtRQTJuSEhoT0p1R1I5Y01OQXlqX2lUNU02bVVpUHpsTlo3bFN6ZzRtTDI3b2VQWU1Cd3JJQ3dOcC1fWkQ0NHVWTjJ2VGpuaG1hdFFqenpMWDFIbHBpT2c?oc=5",
+      "summary": "제목·링크·발행일만 자동으로 확인한 자료입니다. [원문 읽기]로 본문을 확인하고 직접 요약해 보세요.",
+      "summaryKind": "자동 수집 · 제목만 확인",
+      "message": "원문을 읽고 이 사설의 핵심 주장을 한 문장으로 정리해 보세요.",
+      "quote": "‘양극화 완화’ 예산 보강하되, ‘새는 돈’ 없게 철저 심사해야",
+      "quoteLocation": "사설 제목",
       "verification": "제목",
+      "autoCollected": true,
       "frame": {
-        "problem": "거대 이커머스 플랫폼의 알고리즘 왜곡과 입점업체·노동자 착취",
-        "cause": "독과점 지위를 악용한 시장 지배력 남용과 규제 공백",
-        "value": "공정 거래 질서와 플랫폼 노동 인권",
-        "solution": "플랫폼 독점 규제법 입법 및 불공정 약관·노동환경 개선",
-        "missing": "플랫폼 혁신이 소비자에게 제공한 물류 편의와 가격 인하 효용"
+        "problem": "원문 확인 후 직접 판독",
+        "cause": "원문 확인 후 직접 판독",
+        "value": "원문 확인 후 직접 판독",
+        "solution": "원문 확인 후 직접 판독",
+        "missing": "다른 신문 사설과 비교해 덜 드러난 관점을 찾아보세요."
       },
-      "frameTags": [
-        "원칙",
-        "책임"
-      ]
+      "frameTags": []
     },
     {
       "id": "hani3",
       "outlet": "hani",
-      "title": "[사설] 이 대통령 ‘외국인’ ‘다문화’ 발언, 혐오 부추길 우려 크다",
+      "title": "[사설]납득 안 되는 ‘선관위 병력 투입’ 지휘관 무죄 판결",
       "published": "2026-11-01",
-      "issue": "대통령 외국인·다문화 관련 발언",
-      "url": "https://news.google.com/rss/articles/CBMiakFVX3lxTE9QcXMyRFR4SlpuVVA3c0YyNlY2QWFHeEJDQUhaV0d5V21lbWdQV1RQc2JQcTJxeVhlT1psZmhUYVJMTGsycDRJLUZ5WENDLUptcVNYblBXbTFCc3MzSVFOdm1VdTJvNXhzSUE?oc=5",
-      "summary": "대통령이 외국인과 다문화 가정을 사회적 부담이나 범죄 가능성과 결부짓는 듯한 발언을 한 것은 사회적 혐오를 부추긴다고 강하게 비판한다. 우리 사회의 필수 인력으로 자리 잡은 이주민들을 타자화하는 것은 인권 침해이자 국가적 위상을 깎아내리는 처사라고 지적한다. 혐오 편승 정치를 중단하고 이주민과 상생하는 인권 중심 다문화 정책을 펼쳐야 한다고 주장한다.",
-      "message": "대통령의 배타적 다문화 인식은 사회적 증오를 증폭시키므로 즉각 사과하고 포용 정책으로 전환해야 한다.",
-      "quote": "혐오 부추길 우려 크다",
-      "quoteLocation": "제목의 표현",
+      "publishedVerified": true,
+      "issue": "선관위 병력 투입 지휘관 무죄 판결",
+      "url": "https://news.google.com/rss/articles/CBMiakFVX3lxTE51eE1KZ24xSTQtNFNxV1RLZ2ZXMk5TeGdXb0tPSEM3RlM5ZGo5MXhUQko1TzBzNE9zS0p1emh3U2JweGhzZlBNV0RUeWlUQTlEZ0NZWmx0dV9VcjVsbnlMdDNmbHFYNmlDdWc?oc=5",
+      "summary": "제목·링크·발행일만 자동으로 확인한 자료입니다. [원문 읽기]로 본문을 확인하고 직접 요약해 보세요.",
+      "summaryKind": "자동 수집 · 제목만 확인",
+      "message": "원문을 읽고 이 사설의 핵심 주장을 한 문장으로 정리해 보세요.",
+      "quote": "납득 안 되는 ‘선관위 병력 투입’ 지휘관 무죄 판결",
+      "quoteLocation": "사설 제목",
       "verification": "제목",
+      "autoCollected": true,
       "frame": {
-        "problem": "대통령 발언으로 촉발된 이주노동자·다문화 구성원에 대한 혐오 정서",
-        "cause": "국가 지도층의 차별적 편견과 포퓰리즘적 갈라치기 정치",
-        "value": "보편적 인권과 다문화 공존",
-        "solution": "차별적 발언에 대한 입장 표명 및 포용적 이민자 권익 보장 정책",
-        "missing": "이주민 유입에 따른 사회적 통합 비용과 문화적 갈등 완화 대책"
+        "problem": "원문 확인 후 직접 판독",
+        "cause": "원문 확인 후 직접 판독",
+        "value": "원문 확인 후 직접 판독",
+        "solution": "원문 확인 후 직접 판독",
+        "missing": "다른 신문 사설과 비교해 덜 드러난 관점을 찾아보세요."
       },
-      "frameTags": [
-        "시민",
-        "갈등"
-      ]
+      "frameTags": []
     },
     {
       "id": "khan1",
       "outlet": "khan",
-      "title": "[사설]수도권 주택공급, 정부·지자체 적극 협력해야",
+      "title": "[사설]이 대통령의 과도한 SNS, 부정적 영향 우려하는 목소리 경청하길",
       "published": "2026-11-01",
-      "issue": "수도권 신규 주택 공급 정책",
-      "url": "https://news.google.com/rss/articles/CBMiWkFVX3lxTFBXYXNicE52UTRzcVJWRlhISUhSbW1ESC1RYnFZTEhpU1ZSTzFJTk5mN2JJejZwMmJRZGhFNjdqb3RoTHVldTZhdmc2cFBjX3JIMTlTdlpsWlVuZ9IBX0FVX3lxTFAtaGRLRDdieWVjWU1MVUE1aGxnWFZ5akZVbktKWktUUTdKWHZSN3F1YTJGRkpvVW91NFo2Sll0allMV2Zxa3B4dExzMW04c0FlcXJJcERhaWdlMDJfTmZj?oc=5",
-      "summary": "정부가 발표한 수도권 신규 택지 공급 방안이 실효성을 거두려면 지자체와의 정밀한 소통과 협업이 필수적이라고 짚는다. 공급 부지 인근 주민들의 반발과 지자체의 교통·인프라 요구를 무시한 일방적 추진은 정책 표류를 부를 수 있다고 경고한다. 공공임대 비중을 확대하고 서민 주거 안정을 최우선에 두는 공급 청사진을 짜야 한다고 강조한다.",
-      "message": "수도권 주택 공급 정책은 서민 주거 복지 확충과 지자체 간 상생 협력을 바탕으로 추진되어야 한다.",
-      "quote": "수도권 주택공급, 정부·지자체 적극 협력해야",
-      "quoteLocation": "제목의 표현",
+      "publishedVerified": true,
+      "issue": "대통령의 SNS 활동",
+      "url": "https://news.google.com/rss/articles/CBMiWkFVX3lxTFBFRTlhbkx6T19HLUZ5aElJSnpQdlpHQk50UU1aaGtMQXZoWkcyRThDME9ubW9FdUZGR2tZZzhDRzNWNk9qeHd3LVo5d0RLbWV2LU9oX1RrYmc1QdIBX0FVX3lxTE5EUXFONEdHM1RpOWFNc2g3WTJ1em1lcGFwT1RDUUNTZVNGbDZ0TGxISlRqLUU5TGlVcFRkWmN2dllTTEw5VGlqZGxzWGpaTWdTRHBCWE5zMW9IZllPYi1R?oc=5",
+      "summary": "제목·링크·발행일만 자동으로 확인한 자료입니다. [원문 읽기]로 본문을 확인하고 직접 요약해 보세요.",
+      "summaryKind": "자동 수집 · 제목만 확인",
+      "message": "원문을 읽고 이 사설의 핵심 주장을 한 문장으로 정리해 보세요.",
+      "quote": "이 대통령의 과도한 SNS, 부정적 영향 우려하는 목소리 경청하길",
+      "quoteLocation": "사설 제목",
       "verification": "제목",
+      "autoCollected": true,
       "frame": {
-        "problem": "지자체 조율 미흡으로 우려되는 수도권 신규 주택 공급 차질",
-        "cause": "중앙정부의 일방 통행식 택지 지정과 인프라 대책 부족",
-        "value": "서민 주거 안정과 협치 행정",
-        "solution": "공공임대주택 비중 확대 및 중앙-지방 정부 간 거버넌스 강화",
-        "missing": "민간 건설사 참여 유인을 위한 규제 완화 및 사업성 확보 관점"
+        "problem": "원문 확인 후 직접 판독",
+        "cause": "원문 확인 후 직접 판독",
+        "value": "원문 확인 후 직접 판독",
+        "solution": "원문 확인 후 직접 판독",
+        "missing": "다른 신문 사설과 비교해 덜 드러난 관점을 찾아보세요."
       },
-      "frameTags": [
-        "책임",
-        "효율"
-      ]
+      "frameTags": []
     },
     {
       "id": "khan2",
       "outlet": "khan",
-      "title": "[사설]노상원과 ‘롯데리아 계엄 모의’ 전원 1심 무죄, 납득하기 어렵다",
+      "title": "[사설]팬데믹 시기 요양시설 비극 막을 의료 대응 체계 마련해야",
       "published": "2026-11-01",
-      "issue": "계엄 문건 및 군 관련 사법 판결",
-      "url": "https://news.google.com/rss/articles/CBMiWkFVX3lxTE0tTnhuMkcxRFI1blB2TExYQldsd3hKOHB0VVFqRmttMFlQUHNNWlgyTFpmT2hSY3VuRjFVXzhwbE1RRmNQNm1iZVoxWWlPY0hPYnloTGoydHgtZ9IBX0FVX3lxTE5nZ2w0b3kxeTdpRXFXLXpGZkg1MkEyMW5jeDhWOVB1UmRwUk9nSnBRakRnMTlLUzFqWEFmc3gxOVBxUG5HbEJ0a003Qy03TUU3VnJ2NGQ0QXQ4SkpRU3pN?oc=5",
-      "summary": "계엄 모의 혐의로 기소된 군 관계자들에게 법원이 1심에서 전원 무죄를 선고한 것은 국민 상식과 헌법 수호 의지에 역행한다고 비판한다. 군 장성들이 비밀리에 모여 헌정 중단 상황을 논의한 명백한 정황을 단순한 실현성 부족으로 치부해선 안 된다고 지적한다. 헌정 질서를 위협하는 군 내부의 정치 개입 시도에 대해 상급심의 엄정한 사법적 단죄를 촉구한다.",
-      "message": "헌정 파괴를 획책한 군의 계엄 모의 의혹에 면죄부를 준 사법부 판결은 납득하기 어렵다.",
-      "quote": "전원 1심 무죄, 납득하기 어렵다",
-      "quoteLocation": "제목의 표현",
+      "publishedVerified": true,
+      "issue": "요양시설 감염병 의료 대응 체계",
+      "url": "https://news.google.com/rss/articles/CBMiWkFVX3lxTE54bFlSdEFJaEtYcjNoYk5lWnhTalRHRXQ5cVZuSlRlQklPdVZNUmR2WnZBSmxxc1ZKR2FDNDRLYmhxWHZVUVJSWDJRV0tVWUpCSEttSnUtWnNNQdIBX0FVX3lxTE04Rk82TERzV2NGaDdrRGdhNFd6UUNFdDd5R3NhMXplZWk4dk9fSjdjWlptY19TZGFoSUtjcWlrSkpvWGRpT3dpeTFjX2lUVEpGeU5FbmNqTUtzdy0wT1VB?oc=5",
+      "summary": "제목·링크·발행일만 자동으로 확인한 자료입니다. [원문 읽기]로 본문을 확인하고 직접 요약해 보세요.",
+      "summaryKind": "자동 수집 · 제목만 확인",
+      "message": "원문을 읽고 이 사설의 핵심 주장을 한 문장으로 정리해 보세요.",
+      "quote": "팬데믹 시기 요양시설 비극 막을 의료 대응 체계 마련해야",
+      "quoteLocation": "사설 제목",
       "verification": "제목",
+      "autoCollected": true,
       "frame": {
-        "problem": "군 내부의 불법 계엄 검토 의혹에 대한 사법부의 전원 무죄 선고",
-        "cause": "내란 음모 및 직권남용 요건에 대한 법원의 소극적·형식적 법리 해석",
-        "value": "입헌 민주주의 수호와 군의 정치적 중립",
-        "solution": "검찰의 철저한 항소심 입증과 사법부의 엄중한 헌법 수호 판결",
-        "missing": "형사법상 죄형법정주의와 엄격한 증거주의 원칙의 중요성"
+        "problem": "원문 확인 후 직접 판독",
+        "cause": "원문 확인 후 직접 판독",
+        "value": "원문 확인 후 직접 판독",
+        "solution": "원문 확인 후 직접 판독",
+        "missing": "다른 신문 사설과 비교해 덜 드러난 관점을 찾아보세요."
       },
-      "frameTags": [
-        "원칙",
-        "위기"
-      ]
+      "frameTags": []
     },
     {
       "id": "khan3",
       "outlet": "khan",
-      "title": "[사설]수능 부정행위 대응 강화, 현장 혼란 없도록 만전 기하길",
+      "title": "[사설]북 해킹 조직의 8조 원대 가상자산 탈취, 사이버 안보 원점 재점검해야",
       "published": "2026-11-01",
-      "issue": "대입 수능 시험 관리 및 공정성",
-      "url": "https://news.google.com/rss/articles/CBMiWkFVX3lxTE1xc0IxOWdPd2twd19LMmk5MTBMN2oyb1ZjRnVUVjdHY1ppUHl4UjNRMjRkQ3A4Z2M4RTl2c3FqcFNGZUlHZGhRLVkyMXl1dl9MY0cyLXlfcHh6UdIBX0FVX3lxTE5BMzZqSDNuY2N1M2twbjJQd1hibGt6MzN4c3ZrWlpUaFQybXJOQm52UlE4OHdDQzBJeXJ5ZkJRZ3N4dkpwWlZDUnNhTFlCUXBPcXBkcEtsUTNhYnVwU19F?oc=5",
-      "summary": "대학수학능력시험을 앞두고 첨단 기기를 활용한 부정행위 방지 대책이 강화된 것은 타당하나 수험생 혼란을 최소화해야 한다고 당부한다. 과도한 보안 조치나 불명확한 지침으로 인해 선의의 수험생이 피해를 보거나 고사장이 위축되지 않도록 주의해야 한다고 지적한다. 감독관 교육과 시험장 환경 관리를 빈틈없이 준비해 공정하고 안정적인 수능을 치러내야 한다고 제언한다.",
-      "message": "수능 부정행위 단속을 철저히 하되 수험생들이 심리적 동요 없이 실력을 발휘하도록 현장 관리에 만전을 기해야 한다.",
-      "quote": "현장 혼란 없도록 만전 기하길",
-      "quoteLocation": "제목의 표현",
+      "publishedVerified": true,
+      "issue": "북한의 8조원대 가상자산 해킹",
+      "url": "https://news.google.com/rss/articles/CBMiWkFVX3lxTE8zSVhFV093V2JpSnlucWo3T0JfMVRfSHVuTzZrbF9KX2RFcF91UGR1dHhrY01PLXViaFJWNHFSRTlrYmN4T3B4ZmNQTmRpVFNENWExcGtWaWtSUdIBX0FVX3lxTE5NTzV6M1RLOGdSSDVrNHgteEVOT2lNVXV5dl9KT2k0VTdaN2RfZmhhbHVfRTEzLTNqaXloeU0zdUJzS3V4YnhHVnZTMHRPYy1TdjJ1aHRXNjRZcDZvS0ZZ?oc=5",
+      "summary": "제목·링크·발행일만 자동으로 확인한 자료입니다. [원문 읽기]로 본문을 확인하고 직접 요약해 보세요.",
+      "summaryKind": "자동 수집 · 제목만 확인",
+      "message": "원문을 읽고 이 사설의 핵심 주장을 한 문장으로 정리해 보세요.",
+      "quote": "북 해킹 조직의 8조 원대 가상자산 탈취, 사이버 안보 원점 재점검해야",
+      "quoteLocation": "사설 제목",
       "verification": "제목",
+      "autoCollected": true,
       "frame": {
-        "problem": "수능 부정행위 방지 대책 강화에 따른 고사장 현장의 긴장과 혼선 가능성",
-        "cause": "지능화되는 부정행위 수법과 경직된 현장 통제 간의 부작용 우려",
-        "value": "시험의 공정성과 수험생 권익 보호",
-        "solution": "명확한 세부 감독 가이드라인 배포 및 현장 감독관 사전 교육 철저",
-        "missing": "입시 공정성 유지를 위해 감수해야 할 최소한의 엄격한 보안 통제 필요성"
+        "problem": "원문 확인 후 직접 판독",
+        "cause": "원문 확인 후 직접 판독",
+        "value": "원문 확인 후 직접 판독",
+        "solution": "원문 확인 후 직접 판독",
+        "missing": "다른 신문 사설과 비교해 덜 드러난 관점을 찾아보세요."
       },
-      "frameTags": [
-        "원칙",
-        "시민"
-      ]
+      "frameTags": []
     },
     {
       "id": "hankook1",
       "outlet": "hankook",
-      "title": "[사설] 수도권 신규 택지 공급… '베드타운' 전락해선 안 돼",
-      "published": "2026-11-01",
-      "issue": "수도권 신규 주택 공급 정책",
-      "url": "https://news.google.com/rss/articles/CBMibkFVX3lxTE5uWmM3NXdqbkM5Y3JsWml6ZWhqZHZkU09lT1Jtby1HcjlBTlRDc0NzVm5hejZRYmR2aWl6dFVSMkNzdlZ3Z3hCYnYwRFN2RGFlU1duUGNjQkNibFZsb3NWd1ptdVM4bkZralVmTDRB0gFzQVVfeXFMUHNfb29DUmswS3BNWkVYYW5heEM2NEE3QzZkM2VkMldacjc5MVZJTmliVUU0cFRFT0UzakJ6S1dDYXhDbDN6OTJ5N2NQYzVqSElaWllxY01aN1ExbDJSdDhtNkVCRGRoSU41amxfR201aVdVYw?oc=5",
-      "summary": "정부가 발표한 대규모 신규 택지가 단순한 주거용 베드타운으로 머물지 않도록 일자리와 교통망을 함께 구축해야 한다고 조언한다. 광역교통망이 제대로 갖춰지지 않은 채 아파트만 지어질 경우 출퇴근 대란과 도시 자족성 결여를 초래한다고 경고한다. 첨단 자족 시설과 주거 환경이 어우러진 직주근접형 복합 자족도시로 설계할 것을 주문한다.",
-      "message": "신규 택지 공급은 일자리와 광역교통 대책이 결합된 자족형 복합도시 모델로 추진되어야 한다.",
-      "quote": "'베드타운' 전락해선 안 돼",
-      "quoteLocation": "제목의 표현",
+      "title": "[사설] 눈뜨고 북한에 8조 털려 … 남의 일 아니다",
+      "published": "2026-11-02",
+      "publishedVerified": true,
+      "issue": "북한의 8조원대 가상자산 해킹",
+      "url": "https://news.google.com/rss/articles/CBMibkFVX3lxTE1VZ0lxRC1XTlRCOEtDT1g4YlI2UFZBSm5SdmdiQTBKMkZuMk5SODdNMjdzWmN4MVM0dzBuc0tzejJCNFVLM3pjNnkxNmpwNHhyYXl6WWxOOXFUZFJEb05EMHloa215Wi1PM3NXcExn0gFzQVVfeXFMTndMTmZPRGk2THNvM1VxLUNPSmlhMmw0Wi1lTDhYLTdZTzF5aHdZVXVGSmNBeHBYUFM2QVlza3pXQUZzNDBfMXdBMGFUeG9NX2J3dHpFV0hOcmxjQmZSakJCTmdpWFY5ZjlkVFZZcloyeFdXSQ?oc=5",
+      "summary": "제목·링크·발행일만 자동으로 확인한 자료입니다. [원문 읽기]로 본문을 확인하고 직접 요약해 보세요.",
+      "summaryKind": "자동 수집 · 제목만 확인",
+      "message": "원문을 읽고 이 사설의 핵심 주장을 한 문장으로 정리해 보세요.",
+      "quote": "눈뜨고 북한에 8조 털려 … 남의 일 아니다",
+      "quoteLocation": "사설 제목",
       "verification": "제목",
+      "autoCollected": true,
       "frame": {
-        "problem": "교통 및 일자리 인프라 없는 신규 택지의 베드타운화 위험",
-        "cause": "단기 물량 공급에만 매몰된 도시계획과 지연되는 광역교통망 착공",
-        "value": "지속 가능한 도시 발전과 주거 삶의 질",
-        "solution": "선교통-후입주 원칙 확립 및 자족용지 확보를 통한 일자리 유치",
-        "missing": "신속한 주택 공급을 통한 단기 집값 불안 심리 진정의 시급성"
+        "problem": "원문 확인 후 직접 판독",
+        "cause": "원문 확인 후 직접 판독",
+        "value": "원문 확인 후 직접 판독",
+        "solution": "원문 확인 후 직접 판독",
+        "missing": "다른 신문 사설과 비교해 덜 드러난 관점을 찾아보세요."
       },
-      "frameTags": [
-        "효율",
-        "책임"
-      ]
+      "frameTags": []
     },
     {
       "id": "hankook2",
       "outlet": "hankook",
-      "title": "[사설] 北, 첨단 무기로 위협하는데 한미 연합시스템은 차질 많다니",
-      "published": "2026-11-01",
-      "issue": "한미 안보 협력 및 국방 역량",
-      "url": "https://news.google.com/rss/articles/CBMibkFVX3lxTE0wWVN4Z3dkbDg5cVZfaWgyM1p3MWRMWXM0MGRsMEM1emdYNUtQdm0zZWRPTDFkQ2dLRjh0RlNZUVdCamdDTXNzNkxuTHhLMlRsM2pOQWdmc1RybTBxWXdhbUFIR0FBd2hmQ241UDVB0gFzQVVfeXFMUDlUSHg4MUxVSXZ2ZmRLaEozYUFGejlKdnBsSVZEZUNOSHdfTkxJX1dFbk5NY1RCRGk3dG9OclhGekVoa3dUZkwyMVBBb051TUhGYnVkQ3RmbUwtbVVUSEtsZ0tPWUo1VzBfTnQ2X1lUT1UtNA?oc=5",
-      "summary": "북한의 핵·미사일 전력이 첨단화되는 엄중한 안보 위기에서 한미 연합 지휘·정보 시스템에 결함이 지속되는 것은 심각한 문제라고 비판한다. 양국 간 전략 대화와 정보 공유 네트워크의 차질은 연합 억제력에 심각한 공백을 초래할 수 있다고 우려한다. 군 당국은 조속히 시스템 안정성을 확보하고 한미 방위 태세를 빈틈없이 재정비해야 한다고 강조한다.",
-      "message": "고도화되는 북핵 위협에 대응해 한미 연합 지휘통제 시스템의 기술적 결함과 공조 차질을 조속히 바로잡아야 한다.",
-      "quote": "한미 연합시스템은 차질 많다니",
-      "quoteLocation": "제목의 표현",
+      "title": "[사설] \"추가세수 3년 뒤 고갈\" ... 미래대응기금 심사 엄정하게",
+      "published": "2026-11-02",
+      "publishedVerified": true,
+      "issue": "미래대응기금 심사",
+      "url": "https://news.google.com/rss/articles/CBMic0FVX3lxTFBhamY4LXVIV1ZsRThPNDdOVm95S3d1cDJ2TGlOVkNtYmp1dVFZTHRjX1UxbnBMNW15WjlLVThGU1k1cEZ0Ym9IeHBHcjV4RWJ3OVlDSEhxREJNTTNXNnBkSVdrOUQwREFaSXd1bVJjRUdCMmvSAXNBVV95cUxQYWpmOC11SFdWbEU4TzQ3TlZveUt3dXAydkxpTlZDbWJqdXVRWUx0Y19VMW5wTDVteVo5S1U4RlNZNXBGdGJvSHhwR3I1eEVidzlZQ0hIcURCTU0zVzZwZElXazlEMERBWkl3dW1SY0VHQjJr?oc=5",
+      "summary": "제목·링크·발행일만 자동으로 확인한 자료입니다. [원문 읽기]로 본문을 확인하고 직접 요약해 보세요.",
+      "summaryKind": "자동 수집 · 제목만 확인",
+      "message": "원문을 읽고 이 사설의 핵심 주장을 한 문장으로 정리해 보세요.",
+      "quote": "\"추가세수 3년 뒤 고갈\" ... 미래대응기금 심사 엄정하게",
+      "quoteLocation": "사설 제목",
       "verification": "제목",
+      "autoCollected": true,
       "frame": {
-        "problem": "북핵 위협 심화 속 한미 연합 전력 및 지휘통제 시스템의 결함과 지연",
-        "cause": "군 당국의 기술적 역량 부족과 연합 방위 체계 관리 소홀",
-        "value": "국가 안보 태세와 군사적 실효성",
-        "solution": "연합 C4I 시스템 전면 점검 및 실전적 한미 연합 훈련 내실화",
-        "missing": "과도한 대미 의존을 탈피하기 위한 한국군 독자 정찰·타격 체계의 자립성"
+        "problem": "원문 확인 후 직접 판독",
+        "cause": "원문 확인 후 직접 판독",
+        "value": "원문 확인 후 직접 판독",
+        "solution": "원문 확인 후 직접 판독",
+        "missing": "다른 신문 사설과 비교해 덜 드러난 관점을 찾아보세요."
       },
-      "frameTags": [
-        "위기",
-        "효율"
-      ]
+      "frameTags": []
     },
     {
       "id": "hankook3",
       "outlet": "hankook",
-      "title": "[사설] '이주노동자' '다문화' 겨냥한 대통령, 악영향 생각 안 하나",
-      "published": "2026-11-01",
-      "issue": "대통령 외국인·다문화 관련 발언",
-      "url": "https://news.google.com/rss/articles/CBMibkFVX3lxTE5ucUxHZEY4cE5MRmJDaEdiN0dMbE9WUl9NMGROS0JXN1NCMHR2QWRycEZ6dWZBZ3BqR2M0blVkcjViaDhKOXU1UnhIblEwME5DQTFvYXVRZkJjbjR6ZWxiYUc1YXVJMjJDN0dlS3F30gFzQVVfeXFMTy1FOUlmMTExMTNxLU92UzFVZjdFQTRDOTZUMDFVTGdpRXJjWEQwWXEzNVRBSERVVHp2cmdIakRUcmpqVVZYMVRJcG5GbW5XRjRMMkFoYzlyNGpjZDhMUFNreTM0VUR6aExveVhjMHJ4c1lhcw?oc=5",
-      "summary": "대통령이 공개 석상에서 이주노동자와 다문화 가정을 표적으로 삼아 부정적 인식을 부각한 것은 매우 부적절하다고 질타한다. 저출생과 지방 소멸 위기 속에서 한국 경제를 지탱하는 주요 축인 외국인 인력에 대한 편견을 조장하면 국가 경쟁력에도 타격을 준다고 우려한다. 차별과 배제를 부추기는 수사를 멈추고 사회적 약자를 품는 성숙한 다문화 정책을 펼쳐야 한다고 강조한다.",
-      "message": "대통령의 차별적 언사는 사회적 통합을 파괴하고 국가 대외 이미지와 경제 활력을 훼손한다.",
-      "quote": "악영향 생각 안 하나",
-      "quoteLocation": "제목의 표현",
+      "title": "[사설] 혼란 속출 형사사법체계 개편 한 달, 방치 말아야",
+      "published": "2026-11-02",
+      "publishedVerified": true,
+      "issue": "형사사법체계 개편 시행 한 달",
+      "url": "https://news.google.com/rss/articles/CBMic0FVX3lxTE5GaEd2bDVrWWZaZDZKSVA2b1R0QmtvamtuandaajQ4LWNtUnloUWpUOVA0WVRKVG9Qdnh0NDlUNDVFSlo2bGdkTms2WnpqbVNOb0ZZY1ZiU3lPU0NtU240T0lXZk5XY21zcUFydHd1M3NBejjSAXNBVV95cUxORmhHdmw1a1lmWmQ2SklQNm9UdEJrb2prbmp3Wmo0OC1jbVJ5aFFqVDlQNFlUSlRvUHZ4dDQ5VDQ1RUpaNmxnZE5rNlp6am1TTm9GWWNWYlN5T1NDbVNuNE9JV2ZOV2Ntc3FBcnR3dTNzQXo4?oc=5",
+      "summary": "제목·링크·발행일만 자동으로 확인한 자료입니다. [원문 읽기]로 본문을 확인하고 직접 요약해 보세요.",
+      "summaryKind": "자동 수집 · 제목만 확인",
+      "message": "원문을 읽고 이 사설의 핵심 주장을 한 문장으로 정리해 보세요.",
+      "quote": "혼란 속출 형사사법체계 개편 한 달, 방치 말아야",
+      "quoteLocation": "사설 제목",
       "verification": "제목",
+      "autoCollected": true,
       "frame": {
-        "problem": "대통령의 배타적 언사로 인한 다문화 사회 갈등 격화 및 국가 이미지 실추",
-        "cause": "이민 사회로의 전환에 대한 최고 지도부의 철학 부재와 정략적 발언",
-        "value": "인권 존중과 다양성 기반의 지속 가능한 사회",
-        "solution": "다문화·이주민 포용 메시지 전환 및 차별 금지 제도적 정비",
-        "missing": "국민적 정서와 사회적 합의를 거치는 이민 정책 속도 조절론"
+        "problem": "원문 확인 후 직접 판독",
+        "cause": "원문 확인 후 직접 판독",
+        "value": "원문 확인 후 직접 판독",
+        "solution": "원문 확인 후 직접 판독",
+        "missing": "다른 신문 사설과 비교해 덜 드러난 관점을 찾아보세요."
       },
-      "frameTags": [
-        "책임",
-        "갈등"
-      ]
+      "frameTags": []
     }
   ]
 }
